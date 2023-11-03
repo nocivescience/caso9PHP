@@ -8,3 +8,5 @@ create table caso9(
 )
 
 select * from caso9;
+
+ALTER TABLE caso9 ADD COLUMN pasatiempo varchar(50) AFTER apellido;

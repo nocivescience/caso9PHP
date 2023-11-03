@@ -5,9 +5,9 @@ $query = "SELECT * FROM caso9";
 $resultado = mysqli_query($conexion,$query);
 echo '$resultado';
 if(mysqli_num_rows($resultado)>0){
-    echo "<table class='table' border='1'><tr><td>Nombre</td><td>Apellido</td><td>Email</td></tr>";
+    echo "<table class='table' border='1'><tr><td>Nombre</td><td>Apellido</td><td>Pasatiempo</td><td>Email</td></tr>";
     while($row = mysqli_fetch_assoc($resultado)){
-        echo "<tr><td>".$row['nombre']."</td><td>".$row['apellido']."</td><td>".$row['email']."</td></tr>";
+        echo "<tr><td>".$row['nombre']."</td><td>".$row['apellido']."</td><td>".$row['pasatiempo']."</td><td>".$row['email']."</td></tr>";
     }
     echo "</table>";
 }else{

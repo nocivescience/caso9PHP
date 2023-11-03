@@ -30,6 +30,9 @@
             </span>
         </div>
         <div class="input-group mb-3">
+            <input type="text" name="hobbie" placeholder="ingrese su hobbie" class="form-control">
+        </div>
+        <div class="input-group mb-3">
             <input type="submit" class="form-control" placeholder="Su contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2" name="enviar">
         </div>
     </form>

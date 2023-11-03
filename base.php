@@ -4,8 +4,9 @@
         if(strlen($_POST['nombre']) >= 1 && strlen($_POST['apellido']) >= 1 && strlen($_POST['email']) >= 1){
             $nombre = trim($_POST['nombre']);
             $apellido = trim($_POST['apellido']);
+            $hobbie= trim($_POST['hobbie']);
             $email = trim($_POST['email']);
-            $consulta = "INSERT INTO caso9(nombre, apellido, email) VALUES ('$nombre','$apellido','$email')";
+            $consulta = "INSERT INTO caso9(nombre, apellido, pasatiempo, email) VALUES ('$nombre','$apellido','$email', '$hobbie')";
             $resultado = mysqli_query($conexion,$consulta);
             if($resultado){
                 ?>
